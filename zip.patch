@@ -1,0 +1,15 @@
+diff --git a/platforms/ios/Pods/Zip/Zip/Zip.swift b/platforms/ios/Pods/Zip/Zip/Zip.swift
+index 544e300..78fc521 100644
+--- a/platforms/ios/Pods/Zip/Zip/Zip.swift
++++ b/platforms/ios/Pods/Zip/Zip/Zip.swift
+@@ -166,8 +166,8 @@ public class Zip {
+ 
+             let creationDate = Date()
+ 
+-            let directoryAttributes = [FileAttributeKey.creationDate : creationDate,
+-                                       FileAttributeKey.modificationDate : creationDate]
++            let directoryAttributes = [FileAttributeKey.creationDate.rawValue : creationDate,
++                                       FileAttributeKey.modificationDate.rawValue : creationDate]
+ 
+             do {
+                 if isDirectory {
