@@ -19,5 +19,6 @@ install:
 
 script:
 - npm ls -g --depth=0
-- ./build.sh
-
+- ionic cordova platform add ios
+- patch -p 1 < zip.patch
+- ionic cordova build ios --emulator
