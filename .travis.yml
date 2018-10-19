@@ -12,6 +12,7 @@ before_install:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
   brew update > /dev/null;
   gem install --no-rdoc --no-ri cocoapods;
+  pod repo update;
   fi
 
 install:
